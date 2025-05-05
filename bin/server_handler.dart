@@ -6,9 +6,20 @@ class ServeHandler {
   Handler get handler {
     final router = Router();
 
-    // Define a route for the root path.
-    router.get("/", (Request request) {
-      return Response(200, body: "First Router");
+    // Route for the root path.
+    router.get("/", (Request req) {
+      return Response.ok("First Router");
+    });
+
+    // Route with a dynamic user parameter.
+    router.get("/user/<user>", (Request req, String user) {
+      return Response.ok("Hello $user!");
+    });
+
+    // Route with a query parameter for user.
+    router.get("/user", (Request req) {
+      String? user = req.url.queryParameters["user"];
+      return Response.ok("Hello $user!");
     });
 
     // Return the router's handler.
