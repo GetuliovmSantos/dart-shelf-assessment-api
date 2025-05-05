@@ -1,4 +1,7 @@
-# Estudo Dart com Shelf
+# Estudo Dart com Shelf | Dart Shelf Study
+
+<details>
+<summary>🇧🇷 Português</summary>
 
 ## Sobre o Projeto
 
@@ -49,3 +52,60 @@ Sugestões e contribuições são bem-vindas! Sinta-se à vontade para abrir iss
 ---
 
 *Este projeto é parte de um esforço educacional para preparação de competidores da WorldSkills.*
+
+</details>
+
+<details open>
+<summary>🇺🇸 English</summary>
+
+## About the Project
+
+This repository contains my studies and implementations with Dart and the Shelf framework, focused on REST API development. The main objective of this project is to enhance my technical skills in Dart to assist my student who will be participating in the national selection for WorldSkills.
+
+## Objectives
+
+- Review and deepen knowledge in Dart
+- Develop RESTful APIs using Shelf
+- Create tools that enable the creation of assessments
+- Document the learning and implementation process
+- Serve as reference material for students
+
+## Project Structure
+
+The project is being developed incrementally, with frequent updates (daily or every two days) as I advance in my studies.
+
+## Technologies Used
+
+- Dart
+- Shelf (web server development framework)
+- Other packages as needed for the project
+
+## Follow-up
+
+This repository will be regularly updated with new code and learnings. Feel free to follow the progress and use the content as a reference for your own studies.
+
+## How to Run
+
+```bash
+# Clone the repository
+git clone https://github.com/GetuliovmSantos/dart-shelf-assessment-api.git
+
+# Enter the project folder
+cd dart-shelf-assessment-api
+
+# Install dependencies
+dart pub get
+
+# Run the server
+dart run
+```
+
+## Contributions
+
+Suggestions and contributions are welcome! Feel free to open issues or send pull requests.
+
+---
+
+*This project is part of an educational effort to prepare competitors for WorldSkills.*
+
+</details>
