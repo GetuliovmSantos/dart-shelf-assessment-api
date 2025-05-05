@@ -30,10 +30,10 @@ Este repositório será atualizado regularmente com novos códigos e aprendizado
 
 ```bash
 # Clone o repositório
-git clone [URL_DO_REPOSITÓRIO]
+git clone https://github.com/GetuliovmSantos/dart-shelf-assessment-api.git
 
 # Entre na pasta do projeto
-cd [NOME_DA_PASTA]
+cd dart-shelf-assessment-api
 
 # Instale as dependências
 dart pub get
