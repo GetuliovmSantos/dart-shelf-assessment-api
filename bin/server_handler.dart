@@ -1,3 +1,5 @@
+import 'dart:convert';
+
 import 'package:shelf/shelf.dart';
 import "package:shelf_router/shelf_router.dart";
 
@@ -20,6 +22,17 @@ class ServeHandler {
     router.get("/user", (Request req) {
       String? user = req.url.queryParameters["user"];
       return Response.ok("Hello $user!");
+    });
+
+    // Route for login.
+    router.post('/login', (Request req) async {
+      Map res = jsonDecode(await req.readAsString());
+
+      if (res["name"] == "Admin" && res["password"] == 123) {
+        return Response.ok("Welcome ${res["name"]}");
+      } else {
+        return Response.forbidden("Error");
+      }
     });
 
     // Return the router's handler.
